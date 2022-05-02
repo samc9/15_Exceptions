@@ -42,7 +42,7 @@ char character(char start, int offset)
 	{
 		if (static_cast<char>(start + offset) < 'a' || static_cast<char>(start + offset) > 'z')
 		{
-			string invalidRangeException = "\nERROR: Target is not a valid character, enter new offset!\n";
+			string invalidRangeException = "ERROR: Target is not a valid character, enter new offset!";
 			throw invalidRangeException;
 		}
 	}
